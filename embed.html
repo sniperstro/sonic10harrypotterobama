@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sonic10HarryPotterObama — game</title>
+<style>
+  @font-face{font-family:"Nise-Sega";src:url("assets/fonts/NiseSega.ttf");font-display:swap}
+  @font-face{font-family:"Copperplate Gothic";src:url("assets/fonts/CopperplateGothic.ttf");font-display:swap}
+  html,body{margin:0;height:100%;background:#02030a;overflow:hidden}
+  /* the canvas fills the whole frame; the parent (iframe) is sized to the
+     game's native 960x600 (8:5) aspect, so there's no crop and no distortion */
+  #unity-canvas{display:block;width:100%;height:100%;background:#000}
+  #loader{
+    position:fixed;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:16px;text-align:center;padding:16px;
+    background:#02030a url("assets/casino-night-zone.gif") center/cover no-repeat;
+  }
+  #loader::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.6)}
+  #loader > *{position:relative}
+  #loader.hidden{display:none}
+  .ltitle{font-family:"Nise-Sega",cursive;font-size:clamp(26px,7vw,46px);line-height:1;
+    background:linear-gradient(100deg,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
+    -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 3px 0 rgba(0,0,0,.7))}
+  .spin{width:40px;height:40px;border-radius:50%;border:4px solid #26315c;border-top-color:#26c6da;animation:s 1s linear infinite}
+  @keyframes s{to{transform:rotate(360deg)}}
+  .bar{width:min(340px,80%);height:12px;border-radius:999px;background:#0d1733;overflow:hidden;border:1px solid rgba(120,170,255,.4)}
+  .bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#26c6da,#f7a600);transition:width .15s}
+  .txt{font-family:"Copperplate Gothic",serif;letter-spacing:.1em;color:#dce7ff;font-size:14px}
+</style>
+</head>
+<body>
+  <canvas id="unity-canvas" tabindex="-1"></canvas>
+  <div id="loader">
+    <div class="ltitle">Sonic10<br>HarryPotter<br>Obama</div>
+    <div class="spin"></div>
+    <div class="bar"><i id="fill"></i></div>
+    <div class="txt" id="txt">LOADING… 0%</div>
+  </div>
+<script>
+  var canvas=document.querySelector("#unity-canvas");
+  var loader=document.querySelector("#loader");
+  var fill=document.querySelector("#fill");
+  var txt=document.querySelector("#txt");
+  var config={
+    dataUrl:"Build/webgl.data",
+    frameworkUrl:"Build/webgl.framework.js",
+    codeUrl:"Build/webgl.wasm",
+    streamingAssetsUrl:"StreamingAssets",
+    companyName:"DefaultCompany",
+    productName:"Harry Potter Obama 10",
+    productVersion:"1.0"
+  };
+  var s=document.createElement("script");
+  s.src="Build/webgl.loader.js";
+  s.onload=function(){
+    createUnityInstance(canvas,config,function(p){
+      var pct=Math.round(p*100);
+      fill.style.width=pct+"%"; txt.textContent="LOADING… "+pct+"%";
+    }).then(function(inst){
+      loader.classList.add("hidden");
+      canvas.focus();
+      window.focus();
+    }).catch(function(err){
+      txt.textContent="Failed to load: "+err;
+      document.querySelector(".spin").style.display="none";
+    });
+  };
+  s.onerror=function(){ txt.textContent="Could not load game files."; document.querySelector(".spin").style.display="none"; };
+  document.body.appendChild(s);
+  // grab keyboard as soon as the player clicks into the frame
+  window.addEventListener("click",function(){ canvas.focus(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sonic10HarryPotterObama.html</title>
+<meta name="description" content="Sonic10HarryPotterObama (SHPO10) - the original 2010 bootleg backpack meme. Now a playable game. Relive the magic of hogwart and take down egg. Parody meme project on pump.fun." />
+<link rel="icon" href="assets/title-art.png" />
+<meta property="og:title" content="Sonic10HarryPotterObama - THE PEOPLE'S MEME" />
+<meta property="og:description" content="The original 2010 bootleg backpack meme. Now playable. Trust in $TICKER." />
+<meta property="og:image" content="assets/title-art.png" />
+<style>
+  /* ========================================================================
+     Built like it's 1999. Hard edges only: bevels, 1-2px solid borders,
+     system fonts, tiled GIF background, tables. No border-radius anywhere,
+     no soft shadows, no smooth gradients (except the one navy titlebar).
+     ======================================================================== */
+  @font-face{font-family:"Nise-Sega";src:url("assets/fonts/NiseSega.ttf")}
+  *{box-sizing:border-box;border-radius:0 !important;cursor:url("assets/wand.png") 4 2,auto}
+  html,body{margin:0;padding:0}
+  body{
+    background:#000 url("assets/casino-night-zone.gif") top center/100% auto repeat-y fixed;
+    font-family:"Times New Roman",Times,serif;font-size:16px;color:#fff;line-height:1.5;
+  }
+  img{border:0}
+  a{color:#4da3ff;text-decoration:underline}
+  a:visited{color:#c58cff}
+  a:active{color:#ff3030}
+
+  /* --- bevels (Win95) --- */
+  .raise{box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #ffffff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .sink {box-shadow:inset -1px -1px #ffffff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a}
+
+  /* --- animations (guarded) --- */
+  @keyframes blink{0%,59%{opacity:1}60%,100%{opacity:0}}
+  .blink{animation:blink 1.1s steps(1,end) infinite}
+  @media(prefers-reduced-motion:reduce){.blink{animation:none}}
+
+  /* --- the desktop window that frames the whole page --- */
+  .win{width:min(860px,96vw);margin:16px auto;background:#c0c0c0;padding:3px;position:relative;z-index:1;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #ffffff}
+  .titlebar{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;
+    font:bold 13px/1 "Verdana",Arial,sans-serif;padding:4px 4px 5px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .titlebar .t{display:flex;align-items:center;gap:7px;letter-spacing:.3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .titlebar .t img{width:16px;height:16px;image-rendering:pixelated}
+  .titlebar .btns{display:flex;gap:2px;flex:0 0 auto}
+  .titlebar .btns b{width:18px;height:16px;background:#c0c0c0;color:#000;font:bold 11px/15px "Verdana",sans-serif;text-align:center;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #ffffff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .menubar{background:#c0c0c0;font:12px "Verdana",Arial,sans-serif;color:#000;padding:2px 4px;display:flex;gap:14px;
+    box-shadow:inset 0 -1px #808080}
+  .menubar u{text-decoration:underline}
+  .winbody{background:#000;padding:16px}
+
+  /* --- scrolling status ticker --- */
+  .ticker{background:#000;border:2px solid #ffe600;color:#ffe600;padding:5px 0;margin:0 0 14px;overflow:hidden;
+    font:bold 14px "Verdana",Arial,sans-serif;letter-spacing:.4px}
+  .ticker img{height:22px;vertical-align:middle;margin:0 8px}
+
+  /* --- hero --- */
+  .hero{text-align:center;padding:4px 0 2px}
+  .hero .bp{width:min(300px,78vw);image-rendering:pixelated;background:#000;padding:6px;display:inline-block;
+    box-shadow:inset -1px -1px #ffffff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a}
+  h1.title{font-family:"Nise-Sega",cursive;font-weight:400;line-height:.9;margin:12px 0 6px;
+    font-size:clamp(40px,11.5vw,100px);letter-spacing:.015em;
+    background:linear-gradient(100deg,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
+    -webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 #000)}
+  h1.title span{display:block}
+  h1.title .mid{font-size:.82em}
+  .kick{font:bold 13px "Verdana",Arial,sans-serif;letter-spacing:.14em;color:#00ffff;text-transform:uppercase;margin:4px 0}
+  .construction{display:inline-block;margin:10px auto 2px;padding:5px 16px;background:#ffcc00;color:#000;
+    font:bold 13px "Verdana",Arial,sans-serif;letter-spacing:1px;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #ffffff,inset -2px -2px #806600,inset 2px 2px #fff4c0}
+  .tickpills{margin:12px 0 2px}
+  .tag{display:inline-block;margin:3px;padding:6px 14px;background:#000;border:2px solid #00ff66;color:#00ff66;
+    font:bold 13px "Verdana",Arial,sans-serif;letter-spacing:.5px}
+  .tag.y{border-color:#ffe600;color:#ffe600}
+  .tag b{color:#fff}
+
+  /* --- Win95 buttons / nav --- */
+  .btn{display:inline-block;background:#c0c0c0;color:#000 !important;text-decoration:none !important;
+    font:bold 13px "Verdana",Arial,sans-serif;padding:6px 13px;margin:3px;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #ffffff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .btn:active{box-shadow:inset -1px -1px #ffffff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px #808080}
+  .navbar{text-align:center;margin:14px 0}
+
+  /* --- gif divider --- */
+  .divider{height:22px;margin:16px 0;background:url("assets/sonic-ring-header.gif") repeat-x center/auto 22px}
+
+  /* --- section panels (black + hard solid neon border) --- */
+  .sec{border:2px solid #00ffff;background:#000;padding:16px;margin:14px 0}
+  .sec.m{border-color:#ff44dd}.sec.y{border-color:#ffe600}.sec.g{border-color:#00ff66}.sec.r{border-color:#ff4030}
+  h2{font-family:Impact,Haettenschweiler,"Arial Narrow Bold","Arial Black",sans-serif;font-weight:400;
+    text-transform:uppercase;letter-spacing:1px;text-align:center;line-height:1.02;
+    font-size:clamp(28px,6.2vw,46px);margin:0 0 12px;color:#ffe600;text-shadow:3px 3px 0 #ff00aa,5px 5px 0 #000}
+  .sec.m h2{color:#ff66e0;text-shadow:3px 3px 0 #00d0ff,5px 5px 0 #000}
+  .sec.g h2{color:#66ff8a;text-shadow:3px 3px 0 #0066ff,5px 5px 0 #000}
+  .sec.r h2{color:#ff6a4d;text-shadow:3px 3px 0 #ffe600,5px 5px 0 #000}
+  p{margin:.7em 0}
+  .lead{font-size:19px}
+  .ctr{text-align:center}
+  .y-ink{color:#ffe600}.c-ink{color:#00ffff}
+  mark{background:#ffe600;color:#000;padding:0 3px;font-weight:bold}
+  .rainbow{background:linear-gradient(100deg,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
+    -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:bold}
+  blockquote{margin:16px 0;padding:10px 16px;border-left:5px solid #ffe600;background:#141414;color:#ffe9a8;
+    font-family:"Times New Roman",serif;font-style:italic;font-size:19px}
+  blockquote .by{display:block;margin-top:7px;font-style:normal;font:bold 12px "Verdana",sans-serif;letter-spacing:.06em;color:#9ab}
+
+  /* --- game window --- */
+  .gamewin{width:min(720px,100%);margin:12px auto}
+  .gamebody{background:#000;padding:3px}
+  .gameframe{position:relative;width:100%;aspect-ratio:960/600;background:#000;overflow:hidden;
+    box-shadow:inset -1px -1px #ffffff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a}
+  .gameframe iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .poster{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+    cursor:url("assets/wand.png") 4 2,pointer;background:#000;text-align:center}
+  .poster img{width:min(140px,36vw);image-rendering:pixelated}
+  .poster .go{font:bold 22px Impact,"Arial Black",sans-serif;letter-spacing:1px;color:#ffe600}
+  .poster .sz{font:12px "Verdana",sans-serif;color:#9aa}
+  kbd{font:12px "Verdana",sans-serif;background:#c0c0c0;color:#000;padding:2px 7px;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+
+  /* --- tenets table --- */
+  table.tenets{width:100%;border-collapse:separate;border-spacing:10px;margin-top:6px}
+  table.tenets td{width:33%;vertical-align:top;background:#111;padding:12px;text-align:center;
+    box-shadow:inset -1px -1px #000,inset 1px 1px #444,inset -2px -2px #222,inset 2px 2px #666}
+  table.tenets .ic{font-size:40px;line-height:1}
+  table.tenets h3{font:bold 15px "Verdana",Arial,sans-serif;letter-spacing:.5px;color:#00ffff;margin:6px 0}
+  @media(max-width:620px){table.tenets,table.tenets tr,table.tenets td{display:block;width:auto}}
+
+  /* --- tokenomics --- */
+  .supply{font-family:"Nise-Sega",cursive;font-size:clamp(34px,10vw,76px);line-height:1;text-align:center;
+    background:linear-gradient(100deg,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  ul.tok{list-style:none;padding:0;margin:14px auto;max-width:560px}
+  ul.tok li{background:#111;border:1px solid #333;border-left:6px solid #ffe600;padding:9px 12px;margin:8px 0;font-size:16px}
+
+  /* --- ticker section --- */
+  .tbig{display:inline-block;background:#000;border:3px dashed #ffe600;padding:10px 22px;margin:10px 0;
+    font-family:"Nise-Sega",cursive;font-size:clamp(26px,7vw,52px);color:#fff}
+  .ca{font-family:"Courier New",monospace;color:#00ffcc;background:#001a14;border:2px solid #00664d;
+    padding:10px 12px;display:inline-block;max-width:100%;word-break:break-all;font-size:15px}
+
+  /* --- the meme wall --- */
+  .wallhead{font:bold 13px "Verdana",Arial,sans-serif;color:#00ffff;text-align:center;margin:4px 0 12px}
+  .memewall{text-align:center;font-size:0}
+  a.mm{display:inline-block;background:#c0c0c0;padding:3px;margin:3px;vertical-align:top;
+    box-shadow:inset -1px -1px #ffffff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a}
+  a.mm img{display:block;width:104px;height:104px;object-fit:cover;background:#000;border:1px solid #000}
+  a.mm:hover{background:#ffe600}
+  a.mm:hover img{filter:hue-rotate(90deg) saturate(1.3)}
+
+  /* --- footer furniture --- */
+  .foot{background:#000;border:2px solid #444;padding:16px;margin-top:16px;text-align:center;
+    font-family:"Verdana",Arial,sans-serif;font-size:12px;color:#cfcfe6}
+  .webring{font-size:13px;letter-spacing:.5px;margin:4px 0 12px;color:#fff}
+  .webring a{color:#ffe600}
+  .badges{margin:10px 0}
+  .badge{display:inline-block;width:88px;height:31px;margin:3px;padding:2px;overflow:hidden;vertical-align:middle;
+    font:bold 9px/10px "Verdana",Arial,sans-serif;color:#fff;text-align:center;letter-spacing:.2px;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #ffffff,inset -2px -2px #555,inset 2px 2px #bbb;
+    display:inline-flex;align-items:center;justify-content:center;text-shadow:1px 1px 0 #000}
+  .counter{display:inline-block;font-family:"Courier New",monospace;font-size:20px;letter-spacing:5px;
+    background:#000;color:#39ff5a;border:2px solid #0a0;padding:3px 10px}
+  .disc{max-width:640px;margin:14px auto 0;font-size:11px;color:#9aa;line-height:1.6;border-top:1px solid #333;padding-top:12px}
+
+  /* keep low-res art crisp */
+  .px{image-rendering:pixelated}
+
+  /* ---- parallax decorative sprites (float in the side gutters) ---- */
+  .fx-layer{position:fixed;pointer-events:none;z-index:0;opacity:.92;image-rendering:pixelated;
+    will-change:transform;filter:drop-shadow(0 4px 7px rgba(0,0,0,.55));transition:transform .08s linear}
+  @media(max-width:1180px){.fx-layer{display:none}}
+  @media(prefers-reduced-motion:reduce){.fx-layer{display:none}}
+  .bp{cursor:url("assets/wand.png") 4 2,pointer}
+  @keyframes spin360{to{transform:rotate(360deg)}}
+  .spin1{animation:spin360 .7s ease-in-out}
+
+  /* ---- click emerald burst ---- */
+  .pop{position:fixed;pointer-events:none;z-index:9998;width:30px;image-rendering:pixelated;
+    will-change:transform,opacity;animation:popup .95s ease-out forwards}
+  @keyframes popup{0%{transform:translate(-50%,-50%) scale(.4) rotate(0);opacity:0}
+    15%{opacity:1}100%{transform:translate(-50%,-160%) scale(1.15) rotate(220deg);opacity:0}}
+  /* ---- sparkle cursor trail (the wand leaves magic) ---- */
+  .spark{position:fixed;pointer-events:none;z-index:9997;font:15px/1 "Verdana",sans-serif;
+    color:#ffe600;text-shadow:0 0 5px #ff0;will-change:transform,opacity;animation:sp .6s ease-out forwards}
+  @keyframes sp{0%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(.3)}}
+
+  /* ---- Win95 pop-up dialog (for the funny window buttons) ---- */
+  .dlg{position:fixed;z-index:10000;width:340px;max-width:92vw;background:#c0c0c0;padding:3px;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #fff,5px 5px 0 rgba(0,0,0,.55)}
+  .dlg .tb{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font:bold 13px "Verdana",sans-serif;
+    padding:4px 6px;display:flex;justify-content:space-between;align-items:center;cursor:url("assets/wand.png") 4 2,move}
+  .dlg .tb b{width:18px;height:16px;background:#c0c0c0;color:#000;text-align:center;font:bold 11px/15px "Verdana",sans-serif;position:relative;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .dlg .bd{padding:16px 14px;color:#000;font:13px "Verdana",sans-serif;display:flex;gap:12px;align-items:center;line-height:1.4}
+  .dlg .bd .ic{font-size:32px;flex:0 0 auto}
+  .dlg .ft{padding:0 14px 14px;text-align:center}
+  .dlg .ok{background:#c0c0c0;color:#000;font:bold 12px "Verdana",sans-serif;padding:5px 24px;border:0;cursor:url("assets/wand.png") 4 2,pointer;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .dlg .ok:active{box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px #808080}
+  .win.maxed{width:100vw !important;margin:0 auto !important}
+  .toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:10001;background:#000;color:#ffe600;
+    border:2px solid #ffe600;font:bold 13px "Verdana",sans-serif;padding:8px 16px;animation:tst 2.3s ease forwards}
+  @keyframes tst{0%{opacity:0;transform:translate(-50%,10px)}10%,78%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-8px)}}
+
+  /* ---- entry gate: DO YOU ACCEPT THE TRUTH? ---- */
+  .gate{position:fixed;inset:0;z-index:12000;background:rgba(0,0,0,.84);display:flex;align-items:center;justify-content:center;padding:16px}
+  .gate.gone{display:none}
+  .gatebox{width:390px;max-width:94vw;background:#c0c0c0;padding:3px;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #dfdfdf,inset -2px -2px #808080,inset 2px 2px #fff,6px 6px 0 rgba(0,0,0,.6)}
+  .gatebox .tb{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font:bold 13px "Verdana",sans-serif;
+    padding:4px 6px;display:flex;justify-content:space-between;align-items:center}
+  .gatebox .tb b{width:18px;height:16px;background:#c0c0c0;color:#000;text-align:center;font:bold 11px/15px "Verdana",sans-serif;position:relative;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .gbody{background:#000;margin:3px;padding:18px 16px 20px;text-align:center}
+  .gbody .px{width:150px;background:#000;padding:5px;
+    box-shadow:inset -1px -1px #fff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a}
+  .gname{font-family:"Nise-Sega",cursive;font-size:24px;line-height:1;margin:12px 0 3px;
+    background:linear-gradient(100deg,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .gname span{display:block;line-height:.96}
+  .gsub{font:bold 11px "Verdana",sans-serif;letter-spacing:.14em;color:#00ffff;margin-bottom:6px}
+  .gq{font:400 22px Impact,"Arial Black",sans-serif;letter-spacing:1px;color:#ffe600;text-shadow:2px 2px 0 #ff00aa;margin:14px 0 16px}
+  .gbtns{display:flex;gap:16px;justify-content:center}
+  .gbtn{font:bold 15px "Verdana",sans-serif;padding:9px 32px;border:0;cursor:url("assets/wand.png") 4 2,pointer;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #ffffff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .gbtn.yes{background:#00c33f;color:#002b10}.gbtn.no{background:#dd2222;color:#fff}
+  .gbtn:active{box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px #808080}
+  /* music toggle */
+  .musicbtn{position:fixed;right:10px;bottom:10px;z-index:11000;background:#c0c0c0;color:#000;
+    font:bold 12px "Verdana",sans-serif;padding:6px 12px;border:0;cursor:url("assets/wand.png") 4 2,pointer;
+    box-shadow:inset -1px -1px #0a0a0a,inset 1px 1px #fff,inset -2px -2px #808080,inset 2px 2px #dfdfdf}
+  .musicbtn:active{box-shadow:inset -1px -1px #fff,inset 1px 1px #0a0a0a,inset -2px -2px #dfdfdf,inset 2px 2px #808080}
+  /* clickable menu bar */
+  .menubar span{cursor:url("assets/wand.png") 4 2,pointer;padding:1px 6px}
+  .menubar span:hover{background:#000080;color:#fff}
+  .menubar span:active{background:#0a0a5a}
+  body.psych{animation:huerot 4s linear infinite}
+  @keyframes huerot{to{filter:hue-rotate(360deg)}}
+  /* "THE PEOPLE'S TICKER" tug-of-war - scrolls left->right (sonics keep their own colour) */
+  .peoples{margin:18px 0 10px;overflow:hidden}
+  .peoples .track{display:inline-block;white-space:nowrap;will-change:transform;animation:mqR 11s linear infinite}
+  @keyframes mqR{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+  @media(prefers-reduced-motion:reduce){.peoples .track{animation:none}}
+  .peoples .ptxt{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(18px,4.8vw,36px);letter-spacing:1px;
+    white-space:nowrap;display:inline-block;vertical-align:middle;margin:0 8px;
+    background:linear-gradient(100deg,#7a5c00 0%,#ffe680 18%,#fffbe6 32%,#f6c700 50%,#ffe680 66%,#7a5c00 84%,#ffe680 100%);
+    background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+    filter:drop-shadow(1px 1px 0 #2e2300) drop-shadow(0 2px 2px rgba(0,0,0,.55));animation:goldshine 3s linear infinite}
+  @keyframes goldshine{to{background-position:200% center}}
+  @media(prefers-reduced-motion:reduce){.peoples .ptxt{animation:none}}
+  .peoples .tug{height:clamp(38px,9vw,56px);image-rendering:pixelated;filter:none;vertical-align:middle}
+  .peoples .tug.flip{transform:scaleX(-1)}
+</style>
+</head>
+<body>
+
+<!-- theme tune (starts on YES / music button - browsers block autoplay) -->
+<audio id="music" src="assets/theme.mp3" loop preload="auto"></audio>
+<button id="musicBtn" class="musicbtn" aria-label="toggle music">&#128263; MUSIC: OFF</button>
+
+<!-- ===== ENTRY GATE: DO YOU ACCEPT THE TRUTH? ===== -->
+<div class="gate" id="gate">
+  <div class="gatebox">
+    <div class="tb"><span>&#9888; Sonic10HarryPotterObama.exe</span><b class="gx">&times;</b></div>
+    <div class="gbody">
+      <img class="px" src="assets/title-art.png" alt="Sonic 10 Harry Potter Obama">
+      <div class="gname"><span>Sonic10</span><span>HarryPotter</span><span>Obama</span></div>
+      <div class="gsub">SHPO10 &middot; THE PEOPLE'S MEME</div>
+      <p class="gq">Do you accept the truth?</p>
+      <div class="gbtns">
+        <button class="gbtn yes" id="gYes">YES</button>
+        <button class="gbtn no" id="gNo">NO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- parallax decorative sprites (float in the side gutters) -->
+<img class="fx-layer" src="assets/Hyper_Sonic_run_fly.gif" data-depth="46" style="left:2%;top:16%;width:72px">
+<img class="fx-layer" src="assets/harry-potter-owl.gif" data-depth="30" style="right:2%;top:11%;width:92px">
+<img class="fx-layer" src="assets/sonic-1-palm-tree.png" data-depth="20" style="left:1.5%;top:40%;width:84px">
+<img class="fx-layer" src="assets/Sonic-pulling.gif" data-depth="36" style="right:3%;top:54%;width:82px">
+<img class="fx-layer" src="assets/emerald-acquired.gif" data-depth="64" style="left:4%;top:66%;width:42px">
+<img class="fx-layer" src="assets/emerald-blue.png" data-depth="82" style="left:6%;top:84%;width:34px">
+<img class="fx-layer" src="assets/emerald-red.png" data-depth="74" style="right:6%;top:82%;width:34px">
+<img class="fx-layer" src="assets/Sonic2SonicPushFinal.gif" data-depth="26" style="right:1.5%;top:36%;width:88px">
+
+<div class="win">
+  <div class="titlebar">
+    <span class="t"><img src="assets/title-art.png" alt="">Sonic10HarryPotterObama.html &nbsp;-&nbsp; Netscape Navigator</span>
+    <span class="btns"><b>_</b><b>&#9633;</b><b>&times;</b></span>
+  </div>
+  <div class="menubar"><span><u>F</u>ile</span><span><u>E</u>dit</span><span><u>V</u>iew</span><span><u>G</u>o</span><span><u>B</u>ookmarks</span><span><u>H</u>elp</span></div>
+
+  <div class="winbody">
+
+    <!-- scrolling status bar -->
+    <div class="ticker">
+      <marquee scrollamount="11" behavior="scroll"><img src="assets/sonic-ring-header.gif" alt="">WELCOME TO Sonic10HarryPotterObama &nbsp;&#9670;&nbsp; THE ORIGINAL 2010 BACKPACK MEME &nbsp;&#9670;&nbsp; DO YOU ACCEPT THE TRUTH? &nbsp;&#9670;&nbsp; RELIVE THE MAGIC OF HOGWART &nbsp;&#9670;&nbsp; TAKE DOWN EGG &nbsp;&#9670;&nbsp; GOTTA GO FAST &nbsp;&#9670;&nbsp; TRUST IN $TICKER &nbsp;<img src="assets/Hyper_Sonic_run_fly.gif" alt=""></marquee>
+    </div>
+
+    <!-- HERO -->
+    <div class="hero">
+      <img class="bp" src="assets/title-art.png" alt="The Sonic 10 Harry Potter Obama bootleg backpack print">
+      <h1 class="title"><span>Sonic10</span><span class="mid">HarryPotter</span><span>Obama</span></h1>
+      <div class="kick">The People's Meme &nbsp;&middot;&nbsp; SHPO10 &nbsp;&middot;&nbsp; documented since February 2010</div>
+      <div><span class="construction blink">&#9888; UNDER CONSTRUCTION &#9888;</span></div>
+      <div class="tickpills">
+        <span class="tag y">TICKER <b class="blink">$TICKER</b></span>
+        <span class="tag">FAIR LAUNCH ON <b>pump.fun</b></span>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <a class="btn" href="#play">&#9654; PLAY THE GAME</a>
+      <a class="btn" href="#backpack">THE BACKPACK</a>
+      <a class="btn" href="#quest">THE QUEST</a>
+      <a class="btn" href="#tenets">THE TENETS</a>
+      <a class="btn" href="#tok">TOKENOMICS</a>
+      <a class="btn" href="#ticker">THE TICKER</a>
+      <a class="btn" href="#funny">FUNNY PICS</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- PLAY -->
+    <div class="sec r" id="play">
+      <h2>&#9654; Play The Game</h2>
+      <p class="lead ctr y-ink">Relive the magic of hogwart and take down egg in this classic experence.</p>
+      <div class="gamewin win" style="margin-left:auto;margin-right:auto">
+        <div class="titlebar"><span class="t"><img src="assets/sonic10-stand.jpeg" alt="">sonic10.exe</span><span class="btns"><b>_</b><b>&#9633;</b><b>&times;</b></span></div>
+        <div class="gamebody">
+          <div class="gameframe" id="gameframe">
+            <div class="poster" id="poster" onclick="loadGame()">
+              <img class="px" src="assets/sonic10-stand.jpeg" alt="Sonic 10">
+              <div class="go">&#9654; CLICK TO START</div>
+              <div class="sz">loads the real game right here &middot; 24 MB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="ctr"><kbd>&larr;</kbd> <kbd>&rarr;</kbd> move &nbsp; <kbd>SPACE</kbd> jump &nbsp;&middot;&nbsp; <a href="embed.html" target="_blank" rel="noopener">open full-screen in a new window &#8599;</a></p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- BACKPACK -->
+    <div class="sec" id="backpack">
+      <h2>&#127890; The Backpack</h2>
+      <p class="ctr"><img class="bp px" src="assets/title-art.png" alt="bootleg backpack print" style="width:min(230px,62vw)"></p>
+      <p class="lead">The origins of <mark>#Sonic10HarryPotterObama</mark> trace back to <span class="rainbow">February 2010</span>, when a photograph of a gloriously wrong bootleg backpack first surfaced online.</p>
+      <p>By <b class="y-ink">February 4, 2010</b> it had been posted to <i>Best Week Ever</i>; a month later, on <b class="y-ink">March 9, 2010</b>, GamesBeat crowned it <i>"The World's Most Confusing Backpack."</i> It was a flea-market knockoff &mdash; a <b>Chinese bootleg</b> by the earliest accounts, later lovingly rediscovered in a little <b>Dutch shop</b> &mdash; and it instantly became the most cursed specimen in the entire bootleg-knockoff canon.</p>
+      <p>Printed across the bag: a mangled, hand-drawn Sonic the Hedgehog with the number <b>10</b> on his chest &mdash; flanked by <b style="color:#ff4040">HARRY POTTER</b> in dripping red and <b class="rainbow">OBAMA</b> in rainbow, wrapped in roses. A crossover nobody asked for, and nobody could ever un-see.</p>
+      <blockquote>"Why does Sonic have the number 10 on his chest? So many questions&hellip; so few answers."<span class="by">&mdash; GamesBeat, 2010</span></blockquote>
+      <p><mark>"SHPO10"</mark> rode alongside the image from the very beginning. The key distinction: <b class="y-ink">Sonic10HarryPotterObama is the name of the original 2010 meme</b> &mdash; the backpack, the source &mdash; long before any chart or any ticker ever existed. Everything else is downstream of the bag.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- QUEST -->
+    <div class="sec m" id="quest">
+      <h2>About &mdash; The Quest Of Hallows</h2>
+      <p class="lead ctr y-ink"><b>Parodical multifaceted meme project &mdash; not affiliated with Harry Potter, Obama or Sega. Anyone rational should realize this.</b></p>
+      <p>Before the year 2023, when time did not exist, the universe manifested a store of value. The identification of this value is best described as the Quest (sometimes the Quest of Hallows). Anyone can relive the manifestation by charging their core of Neptune with enough opal as they sleep. But I understand that there isn't enough Opal to go around for everyone and some people haven't Ascended. So I'll report it here as well. There have been other Ascended who have identified this event as well, but have failed to interpret its tenets and apply them in real life.</p>
+      <p>One such Ascended has been gifted with the visions of the necessity of speed as well as foresee the critical universal event. His vision was very near the truth, evidenced by predicting what he called the Dimensional Merge and creating the comic Sonichu, featuring Barack Obama (the first Tenet: iron guidance and resilience) in a cameo. Obama's presence is not a coincidence. None of this is. The Obama family was gifted (a gift of value) a dog, Bo. Bo then in turn had minted a number of baseball cards (a gift of value that generates further value). This recursive gifting is second among the tenets that the Universe is sending across the channel of Neptune, the third being the Optimistic Flurry, of which Sonichu is a diluted representation of and Sonic embodies the spirit much more cleanly.</p>
+      <p>The identification of the manifestation of these three Tenets that we call the Quest has also inspired other fictional works such as those by J.K. Rowling, and her writings on what she calls the Deathly Hallows. Resisting the will of the universe weakens one's immunity to the effect of the low vibrational darkness sludge entities and the kundalini wilts in turn, so the logical actor must embark on the Quest. With the Quest's fruits now laid bare before us, we can assign a human-language name to it. <mark>Sonic10HarryPotterObama</mark> is nothing less than an embodiment of the Quest that led to its discovery (with the exception of 10, being the number of spirals that comprise the Tree of Life). If we listen, we can understand that it is a store of value.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- TENETS -->
+    <div class="sec g" id="tenets">
+      <h2>&#9889; The Three Tenets</h2>
+      <table class="tenets"><tr>
+        <td><div class="ic">&#129668;</div><h3>HARRY POTTER</h3>solves the <b>centralization problem</b> &mdash; takes down corrupt schools and governments.</td>
+        <td><div class="ic">&#129413;</div><h3>OBAMA</h3>solves the <b>oracle problem</b> &mdash; can change the future through hope and change.</td>
+        <td><div class="ic">&#128168;</div><h3>SONIC</h3>solves the <b>slow transaction problem</b> &mdash; gotta go fast.</td>
+      </tr></table>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- TOKENOMICS -->
+    <div class="sec y" id="tok">
+      <h2>&#128176; Tokenomics</h2>
+      <div class="supply">1,000,000,000</div>
+      <p class="lead ctr">total supply &nbsp;&middot;&nbsp; <b style="color:#39ff5a">0% TAX</b> &nbsp;&middot;&nbsp; fair launch on <b>pump.fun</b></p>
+      <ul class="tok">
+        <li>&#127852; <b>0 tax</b> on every buy and every sell.</li>
+        <li>&#128640; Fair launched on <b>pump.fun</b> &mdash; no presale, no team allocation.</li>
+        <li>&#128293; Liquidity to the bonding curve; LP burned on migration.</li>
+        <li>&#128220; Mint &amp; freeze authority revoked &mdash; code is law.</li>
+        <li>&#129689; <span class="rainbow">Trust in $TICKER.</span></li>
+      </ul>
+      <p class="ctr sz" style="color:#9aa;font-family:Verdana,sans-serif;font-size:12px">Everything here is the meme. This is a parody, not financial advice. DYOR.</p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- TICKER -->
+    <div class="sec" id="ticker">
+      <h2 class="ctr">&#10067; What's The Ticker &#10067;</h2>
+      <p class="ctr"><img src="assets/memes/sm/sm-asking-whats-the-ticker.jpg" onerror="this.src='assets/sm-regarded.jpg'" alt="" style="width:min(260px,62vw);box-shadow:inset -1px -1px #fff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a;background:#c0c0c0;padding:4px"></p>
+      <!-- TICKER: set to $TICKER - edit this value to change it -->
+      <p class="ctr"><span class="tbig">THE TICKER IS <span class="rainbow blink">$TICKER</span></span></p>
+      <p class="lead ctr">The pump.fun contract address drops right here &#128071;</p>
+      <!-- CA PLACEHOLDER: paste the pump.fun contract address below -->
+      <p class="ctr"><span class="ca" id="ca">CA: (paste pump.fun contract address here)</span></p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FUNNY PICTURES: the full meme wall -->
+    <div class="sec m" id="funny">
+      <h2>&#128514; Funny Pictures</h2>
+      <p class="ctr"><img class="px" src="assets/you-win.png" alt="YOU WIN" style="width:min(200px,54vw);background:#fff;padding:6px;box-shadow:inset -1px -1px #fff,inset 1px 1px #808080,inset -2px -2px #dfdfdf,inset 2px 2px #0a0a0a"></p>
+      <div class="wallhead">&#9733; 233 DANK PICTURES &mdash; CLICK ANY ONE TO ENLARGE &#9733;</div>
+      <div class="memewall">
+      <a class="mm" href="assets/memes/lg/lg-hpos10i_logo.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hpos10i_logo.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-yeswecan-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-yeswecan-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-president-kidnapped-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-president-kidnapped-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-buy-today-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-buy-today-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-4chan-black.gif" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-4chan-black.gif" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hpos10i-musk-kanye.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hpos10i-musk-kanye.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dont-care-hpos10i.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dont-care-hpos10i.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-100b-market-cap.jfif" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-100b-market-cap.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-2eth-oval.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-2eth-oval.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-9-levels-of-sproto.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-9-levels-of-sproto.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-a764787034df13b50698a7cb9045544ea8ba70c8-8434x5623.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-a764787034df13b50698a7cb9045544ea8ba70c8-8434x5623.webp" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-acid-logo-2.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-acid-logo-2.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-admins.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-admins.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-all-your-base.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-all-your-base.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-anime-bitcoin.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-anime-bitcoin.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ansem.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ansem.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-arnold.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-arnold.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-art-basel-t-shirt.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-art-basel-t-shirt.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-asking-whats-the-ticker.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-asking-whats-the-ticker.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-autism.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-autism.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-based-edit.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-based-edit.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-be-kind-do-good-things.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-be-kind-do-good-things.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-bitcoin-akira-enhanced-upscale.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-bitcoin-akira-enhanced-upscale.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-bitcoin-can.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-bitcoin-can.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-bitcoin-solves-this.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-bitcoin-solves-this.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-black-bw-trains.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-black-bw-trains.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-blue-bull.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-blue-bull.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-business.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-business.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-buy-now-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-buy-now-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-buy-signal-flashing.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-buy-signal-flashing.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-car-ride.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-car-ride.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-cash-money.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-cash-money.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-cash.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-cash.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-chibi.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-chibi.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-coinbased.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-coinbased.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-collage.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-collage.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-congratulations-herb-powell.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-congratulations-herb-powell.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-cope.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-cope.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-cyborg.gif" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-cyborg.gif" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dbz.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dbz.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-delist.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-delist.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-demon-free.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-demon-free.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-devs-do-something.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-devs-do-something.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dip-is-a-gift.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dip-is-a-gift.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dj.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dj.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-do-you-get-it-yet.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-do-you-get-it-yet.webp" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dont-believe-me.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dont-believe-me.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-double tap.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-double tap.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dramatic-harry.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dramatic-harry.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-dreamer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-dreamer.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-drone-strike-approved.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-drone-strike-approved.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-edit-sonic-3-poster-final.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-edit-sonic-3-poster-final.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-elon-hat.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-elon-hat.webp" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-elon-kid.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-elon-kid.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-eternal.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-eternal.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f0-cmq7xwaefkor.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f0-cmq7xwaefkor.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f1ipdsjxoaaw5dw.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f1ipdsjxoaaw5dw.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f1nvhcnayaah1nh.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f1nvhcnayaah1nh.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f2rqyk3bsaacycd.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f2rqyk3bsaacycd.webp" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f5cjmorwuaa9sbl.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f5cjmorwuaa9sbl.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f6gdp67a8aawhcr.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f6gdp67a8aawhcr.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f728kdtboaa-qmy.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f728kdtboaa-qmy.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f9bmrdqwwaavwkm.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f9bmrdqwwaavwkm.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-f9vle_0xkaahfc6.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-f9vle_0xkaahfc6.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-friends-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-friends-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fade-hate-imitate-d86.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fade-hate-imitate-d86.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fade-hate-imitate.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fade-hate-imitate.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fade-hate.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fade-hate.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ff7-hpos10i.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ff7-hpos10i.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fighter.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fighter.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-free-hugs.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-free-hugs.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-full-metal-sproto.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-full-metal-sproto.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fwjo1l9amaawi1e.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fwjo1l9amaawi1e.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fwnc1vgaiaacef6.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fwnc1vgaiaacef6.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fx3katzwyaeiodn.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fx3katzwyaeiodn.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fxlnk05auaantwl.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fxlnk05auaantwl.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fyeoendacaueiui.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fyeoendacaueiui.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-fzu_plsx0aakjnu.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-fzu_plsx0aakjnu.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gbiews4beaa9yov.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gbiews4beaa9yov.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gbjwsd0weaatzlh.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gbjwsd0weaatzlh.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gbl1tlnwaaabpu0.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gbl1tlnwaaabpu0.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gbrck9axsaanvvc.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gbrck9axsaanvvc.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gbrq6cwwsaaj6zv.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gbrq6cwwsaaj6zv.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-getuo2ibmaaditp.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-getuo2ibmaaditp.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gezhdipxiaaoruq.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gezhdipxiaaoruq.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gfbpatpwaaa-hsz.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gfbpatpwaaa-hsz.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ggfvmruwyaeufdy.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ggfvmruwyaeufdy.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ggknoctwaaahsck.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ggknoctwaaahsck.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ggpharjx0aeujgi.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ggpharjx0aeujgi.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ggrnzjswsaaaahs.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ggrnzjswsaaaahs.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-giga-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-giga-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-girl-bitcoin-alt.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-girl-bitcoin-alt.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-glock.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-glock.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gm-sproto.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gm-sproto.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gna0yvqw8aa3ixs.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gna0yvqw8aa3ixs.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-gosling-interlinked.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-gosling-interlinked.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-grace.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-grace.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-grinding.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-grinding.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-grows.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-grows.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-harry-potter-ps1-fire.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-harry-potter-ps1-fire.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-harrypotterrugpull-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-harrypotterrugpull-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-heart-sonic.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-heart-sonic.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hello.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hello.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-how-do-you-like.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-how-do-you-like.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-howl-at-the-moon.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-howl-at-the-moon.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hpos10i-at-the-gate.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hpos10i-at-the-gate.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hpos10i-bitcoin-is-the-answer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hpos10i-bitcoin-is-the-answer.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hpos10i-stupid.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hpos10i-stupid.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hpos10i-trump-aoc.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hpos10i-trump-aoc.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-hug-ticker.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-hug-ticker.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-img_8242-edit.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-img_8242-edit.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-infinite-money-glitch.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-infinite-money-glitch.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-it-is-the-end-game.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-it-is-the-end-game.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-jacket.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-jacket.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-jumbled-art.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-jumbled-art.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-kanye-gb.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-kanye-gb.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-karate.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-karate.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-king-of-shitcoins.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-king-of-shitcoins.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-king-of-the-ring.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-king-of-the-ring.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-king-of-the-streets.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-king-of-the-streets.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-kingdom-hearts.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-kingdom-hearts.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-leaving-the-reveal-party.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-leaving-the-reveal-party.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-life-has-meaning.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-life-has-meaning.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-lounge.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-lounge.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-mentally-here-hpos10i.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-mentally-here-hpos10i.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-milady.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-milady.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-mona-lisa.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-mona-lisa.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-morelight-jacket.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-morelight-jacket.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-mr-potter.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-mr-potter.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-much-to-think.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-much-to-think.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-mulch-3.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-mulch-3.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-mulch-my-shit-up.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-mulch-my-shit-up.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-mural-edit.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-mural-edit.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-my-neighbor-sproto.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-my-neighbor-sproto.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-no-brakes.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-no-brakes.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-no-time.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-no-time.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-notifications.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-notifications.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-now-obamacare-69.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-now-obamacare-69.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-obama-sonic.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-obama-sonic.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-on-chain.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-on-chain.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-oxk_token2049.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-oxk_token2049.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-paint.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-paint.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2021-11-10_09-57-14.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2021-11-10_09-57-14.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-03-10_12-18-08.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-03-10_12-18-08.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-04-28_20-10-03.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-04-28_20-10-03.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-05-06_08-11-19.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-05-06_08-11-19.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-05-06_13-03-12.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-05-06_13-03-12.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-05-11_14-42-14.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-05-11_14-42-14.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-05-21_00-16-43.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-05-21_00-16-43.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-05-24_18-31-21.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-05-24_18-31-21.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2022-12-13_20-43-38.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2022-12-13_20-43-38.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-12_19-58-51.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-12_19-58-51.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-13_07-50-07.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-13_07-50-07.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-14_02-11-41.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-14_02-11-41.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-20_05-42-42.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-20_05-42-42.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-21_02-34-12.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-21_02-34-12.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-21_21-24-16.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-21_21-24-16.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-22_07-36-20.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-22_07-36-20.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-05-31_22-48-43.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-05-31_22-48-43.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-06-01_00-45-38.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-06-01_00-45-38.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-06-01_22-04-03.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-06-01_22-04-03.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-06-04_19-31-48.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-06-04_19-31-48.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-06-08_04-19-17.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-06-08_04-19-17.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-08-22_00-31-26.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-08-22_00-31-26.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-10-22_01-11-30.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-10-22_01-11-30.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-11-20_03-28-41.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-11-20_03-28-41.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2023-12-29_02-59-17.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2023-12-29_02-59-17.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-02-11_05-48-46.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-02-11_05-48-46.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-03-30_04-56-53.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-03-30_04-56-53.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-05-13_01-12-45.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-05-13_01-12-45.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-05-27_05-08-05.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-05-27_05-08-05.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-05-29_03-29-47.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-05-29_03-29-47.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-05-29_03-29-48.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-05-29_03-29-48.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-06-28_05-00-06.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-06-28_05-00-06.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-06-28_05-03-15.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-06-28_05-03-15.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-photo_2024-06-28_05-03-23.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-photo_2024-06-28_05-03-23.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-pisses-over-everything.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-pisses-over-everything.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-please-dont-sell.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-please-dont-sell.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-post-up.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-post-up.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-pride-shirt.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-pride-shirt.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-puppet.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-puppet.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-pyramid.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-pyramid.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-rally.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-rally.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-carl.gif" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-carl.gif" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-regarded.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-regarded.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-retain-or-else.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-retain-or-else.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-retainer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-retainer.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-riding-the-bull.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-riding-the-bull.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ronnie.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ronnie.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-rugs.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-rugs.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-satoshi.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-satoshi.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-save-sproto.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-save-sproto.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-save.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-save.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-saved-harddrive.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-saved-harddrive.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-postmodern.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-postmodern.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-say-what.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-say-what.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-scared-bitboy.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-scared-bitboy.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-shizo-summer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-shizo-summer.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-slurp.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-slurp.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sonic-computer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sonic-computer.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sonic-old.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sonic-old.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sonic-pointing.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sonic-pointing.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sonic-words.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sonic-words.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sproto-album.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sproto-album.webp" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sproto-art-mancinixo.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sproto-art-mancinixo.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sproto-phone.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sproto-phone.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-sproto-wall.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-sproto-wall.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-starwars.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-starwars.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-stealing-nfts.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-stealing-nfts.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-strapped-in.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-strapped-in.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-strawbie-gym.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-strawbie-gym.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-stress.webp" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-stress.webp" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-strong aura.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-strong aura.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-take-me-to-your-dealer.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-take-me-to-your-dealer.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-tattoo.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-tattoo.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-taylor-hedgehog.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-taylor-hedgehog.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-the-ticker-is-bitcoin.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-the-ticker-is-bitcoin.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-this-is-who-you-are-trading-against.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-this-is-who-you-are-trading-against.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-ticker-maxing.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-ticker-maxing.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-tony-hawk-pro-skater.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-tony-hawk-pro-skater.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-trump-sproto.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-trump-sproto.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-trump-ticker.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-trump-ticker.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-twisted-ps1.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-twisted-ps1.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-video-game.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-video-game.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-video-games.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-video-games.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-wake-me-up.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-wake-me-up.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-wasntme.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-wasntme.png" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-wave.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-wave.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-we-were-kings.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-we-were-kings.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-wired.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-wired.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-masonic.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-masonic.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-you-are-the-truth.jpg" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-you-are-the-truth.jpg" alt=""></a>
+      <a class="mm" href="assets/memes/lg/lg-thicker-ticker-dexscreener.gif" target="_blank" rel="noopener"><img loading="lazy" src="assets/memes/sm/sm-thicker-ticker-dexscreener.gif" alt=""></a>
+      </div>
+    </div>
+
+    <!-- FOOTER FURNITURE -->
+    <div class="foot">
+      <div class="webring">
+        &#128256; THE SONIC10HARRYPOTTEROBAMA WEBRING &#128256;<br>
+        [ <a href="#">&#9664; PREV</a> | <a href="#">RANDOM</a> | <a href="#">LIST</a> | <a href="#">NEXT &#9654;</a> ]
+      </div>
+      <div class="badges">
+        <span class="badge" style="background:#1a1a7a">BEST VIEWED IN<br>NETSCAPE 4.0</span>
+        <span class="badge" style="background:#5a5a5a">MADE WITH<br>NOTEPAD</span>
+        <span class="badge" style="background:#7a0000">VALID<br>HTML 3.2</span>
+        <span class="badge" style="background:#006600">800 x 600</span>
+        <span class="badge" style="background:#6a006a">SONIC<br>APPROVED</span>
+        <span class="badge" style="background:#000;color:#ffe600">TRUST IN<br>$TICKER</span>
+      </div>
+      <div style="margin:10px 0">
+        <a href="#" onclick="return false">&#128214; Sign the Guestbook</a> &nbsp;&middot;&nbsp;
+        <a href="#" onclick="return false">&#9993; Email the Webmaster</a>
+      </div>
+      <div style="margin:10px 0">You are visitor number<br><span class="counter" id="hits">00133769</span></div>
+      <div class="peoples">
+        <div class="track">
+          <img class="tug" src="assets/Sonic-pulling.gif" alt="Sonic pulling">
+          <span class="ptxt">THE PEOPLE'S TICKER</span>
+          <img class="tug flip" src="assets/Sonic2SonicPushFinal.gif" alt="Sonic pushing">
+        </div>
+      </div>
+      <div class="disc">
+        <b>Sonic10HarryPotterObama (SHPO10)</b> is a parody meme project. It is <b>not</b> affiliated with, endorsed by,
+        or connected to Harry Potter / Warner Bros., Barack Obama, SEGA, or Sonic the Hedgehog &mdash; all trademarks
+        belong to their respective owners. Nothing on this page is financial advice; memecoins are extremely high-risk
+        and you can lose everything. Trust in $TICKER.<br><br>
+        Last updated: 10/23/2026 &nbsp;&middot;&nbsp; &copy; 2026 Sonic10HarryPotterObama &nbsp;&middot;&nbsp; gotta go fast
+      </div>
+    </div>
+
+  </div><!-- /winbody -->
+</div><!-- /win -->
+
+<script>
+  function loadGame(){
+    var f=document.getElementById('gameframe'),p=document.getElementById('poster');
+    if(p) p.remove();
+    var ifr=document.createElement('iframe');
+    ifr.src='embed.html'; ifr.allow='autoplay; fullscreen; gamepad'; ifr.setAttribute('allowfullscreen','');
+    f.appendChild(ifr);
+  }
+  (function(){
+    var el=document.getElementById('hits'); if(!el) return; var n=133769;
+    setInterval(function(){ n+=Math.floor(Math.random()*4); el.textContent=('00000000'+n).slice(-8); },1700);
+  })();
+
+  // ===== interactivity: parallax, click bursts, sparkle trail, funny window buttons =====
+  (function(){
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // parallax layers follow the mouse
+    var layers=[].slice.call(document.querySelectorAll('.fx-layer'));
+    if(!reduce && layers.length){
+      document.addEventListener('mousemove',function(e){
+        var cx=e.clientX/innerWidth-.5, cy=e.clientY/innerHeight-.5;
+        for(var i=0;i<layers.length;i++){var d=+layers[i].getAttribute('data-depth')||20;
+          layers[i].style.transform='translate('+(-cx*d)+'px,'+(-cy*d)+'px)';}
+      });
+    }
+
+    // emerald burst on any click + sparkle cursor trail
+    var EM=['emerald-blue','emerald-red','emerald-purple','emerald-teal','emerald-orange','emerald-silver','emerald-light-blue'];
+    function burst(x,y){
+      var im=document.createElement('img'); im.className='pop';
+      im.src='assets/'+EM[(Math.random()*EM.length)|0]+'.png';
+      im.style.left=x+'px'; im.style.top=y+'px';
+      document.body.appendChild(im); setTimeout(function(){im.remove();},1000);
+    }
+    if(!reduce){
+      document.addEventListener('click',function(e){ burst(e.clientX,e.clientY); });
+      var lastT=0;
+      document.addEventListener('mousemove',function(e){
+        var now=Date.now(); if(now-lastT<60) return; lastT=now;
+        var s=document.createElement('div'); s.className='spark'; s.textContent='✦';
+        s.style.left=e.clientX+'px'; s.style.top=e.clientY+'px';
+        document.body.appendChild(s); setTimeout(function(){s.remove();},600);
+      });
+    }
+
+    // reusable Win95 dialog + toast (used by the window buttons)
+    function drag(dlg,handle){
+      var ox,oy,on=false;
+      handle.addEventListener('mousedown',function(e){on=true;var r=dlg.getBoundingClientRect();
+        ox=e.clientX-r.left;oy=e.clientY-r.top;dlg.style.left=r.left+'px';dlg.style.top=r.top+'px';dlg.style.transform='none';e.preventDefault();});
+      document.addEventListener('mousemove',function(e){if(!on)return;dlg.style.left=(e.clientX-ox)+'px';dlg.style.top=(e.clientY-oy)+'px';});
+      document.addEventListener('mouseup',function(){on=false;});
+    }
+    window.shpoToast=function(t){var d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(function(){d.remove();},2300);};
+    window.shpoDialog=function(title,icon,msg,ok){
+      var dlg=document.createElement('div'); dlg.className='dlg';
+      dlg.style.left='50%'; dlg.style.top='42%'; dlg.style.transform='translate(-50%,-50%)';
+      dlg.innerHTML='<div class="tb"><span>'+title+'</span><b class="x">×</b></div>'+
+        '<div class="bd"><span class="ic">'+icon+'</span><span>'+msg+'</span></div>'+
+        '<div class="ft"><button class="ok">'+(ok||'OK')+'</button></div>';
+      document.body.appendChild(dlg);
+      dlg.querySelector('.ok').addEventListener('click',function(){dlg.remove();});
+      var x=dlg.querySelector('.x');
+      x.addEventListener('mouseenter',function(){x.style.left=(Math.random()*40-20)+'px';x.style.top=(Math.random()*20-10)+'px';});
+      x.addEventListener('click',function(ev){ev.stopPropagation();shpoToast("you can't close the quest 😤");});
+      drag(dlg,dlg.querySelector('.tb'));
+    };
+
+    // the window titlebar buttons (_, box, x) now do funny things
+    document.addEventListener('click',function(e){
+      var b=e.target.closest && e.target.closest('.titlebar .btns b'); if(!b) return;
+      e.stopPropagation();
+      var sym=b.textContent.trim(), win=b.closest('.win'), game=win&&win.classList.contains('gamewin');
+      if(sym==='×'){ game ? shpoDialog('sonic10.exe','⛔','You cannot stop Sonic. He must go fast. Forever.','FINE')
+                               : shpoDialog('Sonic10HarryPotterObama','⛔','You cannot close the Quest.<br><b>Trust in $TICKER.</b>','OK'); }
+      else if(sym==='_'){ if(win){win.style.transition='transform .18s ease';win.style.transform='scale(.02)';setTimeout(function(){win.style.transform='';},220);} shpoToast('nice try - the Quest cannot be minimized'); }
+      else { if(win){win.classList.toggle('maxed');} shpoToast('MAXIMALLY BASED'); }
+    },true);
+
+    // click the backpack -> it does a 360
+    [].slice.call(document.querySelectorAll('.bp')).forEach(function(bp){
+      bp.addEventListener('click',function(){ if(reduce)return; bp.classList.remove('spin1'); void bp.offsetWidth; bp.classList.add('spin1'); });
+    });
+  })();
+
+  // ===== entry gate + theme music =====
+  (function(){
+    var gate=document.getElementById('gate'), music=document.getElementById('music'), mbtn=document.getElementById('musicBtn');
+    var playing=false;
+    function setBtn(){ mbtn.innerHTML = playing ? '🔊 MUSIC: ON' : '🔇 MUSIC: OFF'; }
+    function play(){ try{music.volume=.55;}catch(e){} var p=music.play(); if(p&&p.then){p.then(function(){playing=true;setBtn();}).catch(function(){playing=false;setBtn();});} else {playing=true;setBtn();} }
+    function stop(){ music.pause(); playing=false; setBtn(); }
+    setBtn();
+    mbtn.addEventListener('click',function(){ playing?stop():play(); });
+
+    var yes=document.getElementById('gYes'), no=document.getElementById('gNo'), gx=document.querySelector('.gatebox .gx');
+    if(yes) yes.addEventListener('click',function(){ gate.classList.add('gone'); play(); });
+    var i=0, lines=["There is no other option.","Wrong. Try again.","You cannot deny the truth.","Resisting weakens the kundalini.","Just click YES. Trust in $TICKER."];
+    function dodge(){ no.style.position='relative'; no.style.left=(Math.random()*200-100)+'px'; no.style.top=(Math.random()*100-50)+'px'; }
+    if(no){ no.addEventListener('mouseenter',dodge); no.addEventListener('click',function(){ if(window.shpoToast)shpoToast(lines[i++%lines.length]); dodge(); }); }
+    if(gx) gx.addEventListener('click',function(){ if(window.shpoToast)shpoToast("you can't close the truth 😤"); });
+  })();
+
+  // ===== menu bar: File / Edit / View / Go / Bookmarks / Help all do something =====
+  (function(){
+    var items=[].slice.call(document.querySelectorAll('.menubar span'));
+    var secs=['#play','#backpack','#quest','#tenets','#tok','#ticker','#funny'], gi=0;
+    var EM=['emerald-blue','emerald-red','emerald-purple','emerald-teal','emerald-orange','emerald-silver','emerald-light-blue'];
+    function D(t,i,m,ok){ if(window.shpoDialog) shpoDialog(t,i,m,ok); }
+    function T(m){ if(window.shpoToast) shpoToast(m); }
+    function shower(){
+      for(var k=0;k<16;k++){ (function(d){ setTimeout(function(){
+        var im=document.createElement('img'); im.className='pop';
+        im.src='assets/'+EM[(Math.random()*EM.length)|0]+'.png';
+        im.style.left=(Math.random()*innerWidth)+'px'; im.style.top=(Math.random()*innerHeight*0.65)+'px';
+        document.body.appendChild(im); setTimeout(function(){im.remove();},1000);
+      },d*60); })(k); }
+    }
+    var actions={
+      'File':function(){ D('File','📁','There is only one File, and it is the Quest.<br>It cannot be saved, printed, or deleted.','OK'); },
+      'Edit':function(){ D('Edit','✏️','You cannot edit the truth.<br>The truth edits <b>you</b>.','OK'); },
+      'View':function(){ var on=document.body.classList.toggle('psych'); T(on?'VIEW: PSYCHEDELIC MODE 🌈':'VIEW: back to normal'); },
+      'Go':function(){ var s=document.querySelector(secs[gi%secs.length]); gi++; if(s)s.scrollIntoView({behavior:'smooth',block:'start'}); T('GOTTA GO FAST 💨'); },
+      'Bookmarks':function(){ T('⭐ Bookmarked! You are now Ascended.'); shower(); },
+      'Help':function(){ D('Help','❓','<b>HARRY POTTER</b> solves centralization.<br><b>OBAMA</b> solves the oracle problem.<br><b>SONIC</b> solves slow transactions.<br><br><b>gotta go fast. Trust in $TICKER.</b>','OK'); }
+    };
+    items.forEach(function(sp){
+      sp.addEventListener('click',function(){ var k=(sp.textContent||'').trim(); (actions[k]||function(){T(k);})(); });
+    });
+  })();
+</script>
+</body>
+</html>
